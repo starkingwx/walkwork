@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#66000000" >
+
+    <LinearLayout
+        android:id="@+id/contact_op_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#aa000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/contact_op_menu_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/select_operation"
+            android:textSize="15dip" />
+
+        <LinearLayout
+            android:id="@+id/contact_op_menu_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/contact_op_dial"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onDial"
+                android:text="@string/dial"
+                android:textColor="@color/general_text_color"
+                android:textSize="20dip" />
+
+            <Button
+                android:id="@+id/contact_op_sms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSMS"
+                android:text="@string/sms"
+                android:textColor="@color/general_text_color"
+                android:textSize="20dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contact_op_menu_next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/contact_op_menu_next_button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="13813005146"
+                android:textColor="@color/general_text_color"
+                android:textSize="20dip" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/contact_op_menu_cancel_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dip"
+            android:onClick="onCancel"
+            android:text="@string/cancel"
+            android:textColor="@color/general_text_color"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+</RelativeLayout>

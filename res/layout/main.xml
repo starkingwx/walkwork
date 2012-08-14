@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/topbar" >
+
+        <Button
+            android:id="@+id/multi_op_menu_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dip"
+            android:text="MulMenu"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/group_select_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/group_select_button_bg"
+            android:onClick="selectGroup"
+            android:padding="6dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="35dip"
+            android:text="@string/all_contacts"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/sys_menu_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:onClick="onSysPopupMenuButtonClick"
+           	android:src="@drawable/menu_icon"
+           	android:background="@drawable/bar_button_bg"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/contact_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottombar"
+        android:layout_below="@+id/topbar"
+        android:divider="@color/contact_list_divider_line"
+        android:dividerHeight="1dip" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#363636" >
+
+        <RelativeLayout
+            android:id="@+id/search_tool_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ee354776" >
+
+            <ImageButton
+                android:id="@+id/keyboard_hide_show_bt"
+                android:layout_width="50dip"
+                android:layout_height="45dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bar_button_bg"
+                android:onClick="showOrHideKeyboard"
+                android:src="@drawable/sym_keyboard_show" />
+
+            <View
+                android:id="@+id/sep1"
+                android:layout_width="1dip"
+                android:layout_height="45dip"
+                android:layout_toRightOf="@+id/keyboard_hide_show_bt"
+                android:background="#88ffffff" />
+
+            <TextView
+                android:id="@+id/name_search_field"
+                android:layout_width="wrap_content"
+                android:layout_height="45dip"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/sep2"
+                android:layout_toRightOf="@+id/sep1"
+                android:ellipsize="middle"
+                android:gravity="center_horizontal|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="30dip" >
+            </TextView>
+
+            <View
+                android:id="@+id/sep2"
+                android:layout_width="1dip"
+                android:layout_height="45dip"
+                android:layout_toLeftOf="@+id/backspace_bt"
+                android:background="#88ffffff" />
+
+            <ImageButton
+                android:id="@+id/backspace_bt"
+                android:layout_width="50dip"
+                android:layout_height="45dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bar_button_bg"
+                android:longClickable="true"
+                android:onClick="backspace"
+                android:src="@drawable/backspace" />
+        </RelativeLayout>
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_tool_bar"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

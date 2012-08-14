@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="contact_long_click_menu">
+        <item>View</item>
+        <item>Edit</item>
+        <item>Group</item>
+        <item>Delete</item>
+    </string-array>
+
+</resources>

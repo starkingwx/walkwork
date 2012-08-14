@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">walkwork_new</string>
+    <string name="all_contacts">All Contacts</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_operation">Select Operation</string>
+    <string name="dial">Dial</string>
+    <string name="sms">SMS</string>
+    <string name="select_dial_number">Select Dial Number</string>
+    <string name="select_sms_number">Select SMS Number</string>
+    <string name="no_number_info">No phone number!</string>
+    <string name="reselect">Reselect</string>
+    <string name="input_at_least_3_digits">Input at least 3 digits</string>
+    <string name="re_input">Re-input</string>
+    <string name="back">Back</string>
+    <string name="contact_grouping">Contact Grouping</string>
+    <string name="grouping_for">Grouping for </string>
+    <string name="no_groups_now">There is no group now, you can create a new one by pressing "Group Create" button on the top-right.</string>
+    <string name="new_group_name">new group title</string>
+    <string name="pls_input">Please input</string>
+    <string name="ok">OK</string>
+    <string name="delete">Delete</string>
+    <string name="add_new_contact">New Contact</string>
+    <string name="add_new_group">New Group</string>
+
+</resources>

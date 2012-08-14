@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="group_select_bt_toucdown">#88ffffff</color>
+    <color name="list_item_text_color">#363636</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="contact_li_unfocused">#ffffff</color>
+    <color name="contact_li_pressed">#2d59c4</color>
+    <color name="contact_li_focused">#2d59c4</color>
+    <color name="contact_li_selected">#000000</color>
+    <color name="contact_list_divider_line">#888c8d92</color>
+    <color name="general_text_color">#363636</color>
+    <color name="topbar">#ee293b75</color>
+    <color name="menu_item_normal">#ffffff</color>
+    <color name="menu_item_pressed">#6b8ec8</color>
+    <color name="transparent">#00000000</color>
+
+</resources>
